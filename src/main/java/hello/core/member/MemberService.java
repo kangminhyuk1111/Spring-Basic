@@ -6,4 +6,6 @@ public interface MemberService {
 
     Member findMember(Long memberId);
 
+    void deleteMember(Member member);
+
 }
