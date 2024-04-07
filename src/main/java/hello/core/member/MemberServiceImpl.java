@@ -3,8 +3,8 @@ package hello.core.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component()
-public class MemberServiceImpl implements MemberService{
+@Component("service")
+public class MemberServiceImpl implements MemberService {
 
     public final MemberRepository memberRepository;
 
