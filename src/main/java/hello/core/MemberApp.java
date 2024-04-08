@@ -6,6 +6,8 @@ import hello.core.member.MemberService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.ArrayList;
+
 public class MemberApp {
 
     public static void main(String[] args) {
@@ -20,5 +22,6 @@ public class MemberApp {
         System.out.println("new member = " + member.getName());
         System.out.println("find member = " + findMember.getName());
     }
+
 
 }
