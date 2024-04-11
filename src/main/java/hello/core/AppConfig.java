@@ -14,24 +14,24 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    @Bean
-    private static MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
-
-    @Bean
-    private static DiscountPolicy discountPolicy() {
-        return new RateDiscountPolicy();
-    }
-
-    @Bean
-    public MemberService memberService() {
-        return new MemberServiceImpl(memberRepository());
-    }
-
-    @Bean
-    public OrderService orderService() {
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
-    }
+//    @Bean
+//    private static MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
+//
+//    @Bean
+//    private static DiscountPolicy discountPolicy() {
+//        return new FixDiscountPolicy();
+//    }
+//
+//    @Bean
+//    public MemberService memberService() {
+//        return new MemberServiceImpl(memberRepository());
+//    }
+//
+//    @Bean
+//    public OrderService orderService() {
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+//    }
 
 }
