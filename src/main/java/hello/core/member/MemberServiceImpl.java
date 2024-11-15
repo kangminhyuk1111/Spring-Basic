@@ -27,5 +27,4 @@ public class MemberServiceImpl implements MemberService {
     public void deleteMember(Member member) {
         memberRepository.deleteMember(member);
     }
-
 }
